@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+    <!-- Sidebar with search bar -->
+    <div class="sidebar">
+      <h3>Search for Users</h3>
+      <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search users..." onkeyup="searchUsers()" />
+      </div>
+      <ul id="search-results"></ul>
+
+      <h3>Following</h3>
+      <ul id="following-list"></ul>
+    </div>
+
+    <!-- Topics Section -->
+    <div class="topics" id="topics-container">
+      <!-- Dynamic content will be added here by JavaScript -->
+      <button onclick="showCreateTopicModal()">Create Topic</button>
+    </div>
+  </div>
+
+  <!-- Create Topic Modal -->
+  <div id="create-topic-modal" class="modal">
+    <div class="modal-content">
+      <h3>Create a New Topic</h3>
+      <textarea id="new-topic-content" placeholder="Write your topic content..."></textarea>
+      <button onclick="createTopic()">Create</button>
+      <button onclick="closeCreateTopicModal()">Cancel</button>
+    </div>
+  </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

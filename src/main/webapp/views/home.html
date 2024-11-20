@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWSX</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <div id="app">
+        <div id="sidebar">
+            <div id="logo">
+                <h1>NEWSX</h1>
+            </div>
+            <h2>Following</h2>
+            <ul id="followingList"></ul>
+        </div>
+        <div id="main">
+            <!-- Added NEWSX above Topics -->
+            <div id="logoMain">
+                <h1>NEWSX</h1>
+            </div>
+            <h1>Topics</h1>
+            <div id="topicList"></div>
+        </div>
+
+        <div id="search">
+            <h2>Search Users</h2>
+            <input type="text" id="searchInput" placeholder="Search by username">
+            <ul id="searchResults"></ul>
+        </div>
+    </div>
+
+    <!-- Popup for adding comments -->
+    <div class="popup" id="commentPopup">
+        <textarea class="comment-input" id="commentText" placeholder="Enter your comment"></textarea>
+        <button class="btn btn-primary" id="submitComment">Submit</button>
+        <button class="btn btn-secondary" id="cancelPopup">Cancel</button>
+    </div>
+
+    <script src="/js/home.js"></script>
+</body>
+</html>
